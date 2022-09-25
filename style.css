@@ -85,8 +85,11 @@ body{
   height: 38px;
 }
 .header-img {
-  fill: white;
-  vertical-align: middle;
+  top: 50%;
+  height: 1.75rem;
+  position: absolute;
+  left: 16px;
+  transform: translate(0, -50%);
 }
 .header-button{
   height: 2.375rem;

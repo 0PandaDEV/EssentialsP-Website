@@ -19,6 +19,7 @@
 }
 
 @media (min-width: 600px) {
+  /*for Desktop*/
   .navbar {
     padding: 2rem 2rem 0;
   }
@@ -68,6 +69,7 @@
 }
 
 @media (max-width: 600px) {
+  /*for Mobile*/
   .navbar {
     padding: 3.4vh 2rem 0;
   }
@@ -92,7 +94,7 @@
   }
 
   .display-1 {
-    font-size: 5vh;
+    font-size: 4.5vh;
     line-height: 40px;
   }
 
@@ -105,6 +107,7 @@
     line-height: 22px;
     font-weight: 500;
     max-width: 400px;
+    color: #f0f6fc;
   }
 
   .right-align {
@@ -242,6 +245,7 @@ body {
   font-weight: 600 !important;
   letter-spacing: 0;
   margin: 0;
+  color: #f0f6fc;
 }
 
 .mb-4, .my-4 {
@@ -289,7 +293,7 @@ body {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .mr-3, .mx-3 {
@@ -385,15 +389,24 @@ button, a {
   text-decoration: none;
 }
 
-.scroll-to {
+/*------------------------------*/
+
+.scroll-to{
+  background-color: #0d1117;
+  width: 100%;
   padding: 7rem 0;
 }
 
 .scroll-to header .display-2 {
-  max-width: 420px;
+  max-width: 460px;
   font-size: 2.5rem;
   line-height: 1.3;
   margin-bottom: 1rem;
+}
+
+.scroll-to header{
+  margin-bottom: 2rem;
+  padding: 0 2rem;
 }
 
 .display-2 {

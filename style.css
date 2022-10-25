@@ -74,8 +74,8 @@
   #wiki {
     height: 38px !important;
     font-size: 14px !important;
-    line-height: 13px !important;
-    padding: 12px;
+    line-height: 20px !important;
+    padding-inline: 12px;
   }
 
   .issues {
@@ -229,13 +229,11 @@
   background-color: #36393f;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #dbc4ff;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
@@ -246,8 +244,8 @@
 }
 
 html {
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100vh;
 }
 
 body {
@@ -274,7 +272,6 @@ body {
 }
 
 .navbar {
-  z-index: 999;
   position: relative;
   width: 100%;
   max-width: 1200px;
@@ -291,6 +288,18 @@ body {
   transform: translateX(-50%);
   border-radius: 5px;
   box-shadow: 0 4px 40px #0c1016;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 40px auto 40px 110px 48px 70px 120px;
+}
+
+.devider {
+  width: 1px;
+  height: 100%;
+  background-color: #21262d;
+}
+
+.btn {
 }
 
 .header-img {
@@ -446,7 +455,7 @@ button, a {
   text-decoration: none;
 }
 
-/*------------------------------*/
+/*--------------IMAGES----------------*/
 .scroll-to {
   background-color: #0d1117;
   width: 100%;

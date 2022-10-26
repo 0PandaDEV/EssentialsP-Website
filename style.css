@@ -213,6 +213,16 @@
     font-size: 11px;
     line-height: 17px;
   }
+
+  .header {
+    grid-template-columns: 40px auto 0px 0px 0px 70px 130px !important;
+  }
+  .hidenav {
+    display: none !important;
+  }
+  .btn {
+    width: 100px;
+  }
 }
 
 * {

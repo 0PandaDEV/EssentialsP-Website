@@ -19,7 +19,6 @@
 }
 
 @media (min-width: 600px) {
-
   /*for Desktop*/
   .navbar {
     padding: 2rem 2rem 0;
@@ -70,6 +69,9 @@
     font-size: 20px;
     line-height: 20px;
   }
+  .menu {
+    grid-column-gap: 7rem;
+  }
 
   #wiki {
     height: 38px !important;
@@ -88,7 +90,7 @@
   }
 
   .text-muted {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .scroll-to {
@@ -114,7 +116,6 @@
 }
 
 @media (max-width: 600px) {
-
   /*for Mobile*/
   .navbar {
     padding: 3.4vh 2rem 0;
@@ -190,7 +191,7 @@
   }
 
   .text-muted {
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .scroll-to {
@@ -201,6 +202,7 @@
     font-size: 29px;
     line-height: 41px;
     font-family: ClashDisplay;
+    margin-bottom: 2rem;
   }
 
   .footer {
@@ -214,6 +216,12 @@
     line-height: 17px;
   }
 
+  .interior-footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+
   .header {
     grid-template-columns: 40px auto 0px 0px 0px 70px 130px !important;
   }
@@ -223,13 +231,26 @@
   .btn {
     width: 100px;
   }
+
+  .menu {
+    grid-template-columns: 1px;
+    grid-column-gap: 4rem;
+  }
+  .logo-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  .d-md-flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 * {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
-  scrollbar-color: #dbc4ff #2F3136;
+  scrollbar-color: #dbc4ff #2f3136;
   scrollbar-width: thin;
   box-sizing: border-box;
 }
@@ -264,17 +285,20 @@ body {
   text-rendering: optimizeLegibility;
   color: white;
   line-height: 1.5;
-  letter-spacing: .01rem;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  letter-spacing: 0.01rem;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .home {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-image: radial-gradient(at 30% 74%,
+  background-image: radial-gradient(
+      at 30% 74%,
       rgba(119, 119, 207, 0.1) 0,
-      transparent 50%),
+      transparent 50%
+    ),
     radial-gradient(at 80% 0, rgba(119, 119, 207, 0.08) 0, transparent 50%);
   background-color: #171b22;
   width: 100% !important;
@@ -310,6 +334,7 @@ body {
 }
 
 .btn {
+  white-space: nowarp;
 }
 
 .header-img {
@@ -327,44 +352,48 @@ body {
   max-width: 800px;
 }
 
-.display-1, .display-2 {
+.display-1,
+.display-2 {
   font-family: ClashDisplay;
   font-weight: 600 !important;
   letter-spacing: 0;
   color: #f0f6fc;
 }
 
-.display-1, .display-2 {
+.display-1,
+.display-2 {
   font-weight: 300;
 }
 
 .hero .description {
-  margin: auto
+  margin: auto;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .highlights .section .description {
     order: 2 !important;
-    margin: 0 !important
+    margin: 0 !important;
   }
 }
 
 .highlights .section.swapped .description {
   order: 2;
-  margin-left: 1.5rem
+  margin-left: 1.5rem;
 }
 
 .highlights .section .description {
-  margin-right: 1.5rem
+  margin-right: 1.5rem;
 }
 
-.mb-5, .my-5 {
+.mb-5,
+.my-5 {
   position: relative;
   left: 50%;
   transform: translate(-50%);
 }
 
-.mr-3, .mx-3 {
+.mr-3,
+.mx-3 {
   margin-right: 1rem !important;
 }
 
@@ -382,6 +411,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .btn.btn-outline-dark {
@@ -460,7 +490,8 @@ body {
   flex-direction: column !important;
 }
 
-button, a {
+button,
+a {
   font-family: inherit;
   text-decoration: none;
 }
@@ -501,8 +532,10 @@ section {
 .bottom {
   background-color: #161b22;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 1200px;
 }
 
 .interior-footer {
@@ -531,12 +564,21 @@ section {
 .item {
   color: #b1b3b5 !important;
 }
-.menu{
+.menu {
   display: grid;
-  grid-column-gap: 7rem;
   grid-template-columns: auto auto auto auto;
   float: right;
 }
-.cta{
+.cta {
   width: 100%;
+}
+
+.h1 {
+  white-space: nowrap;
+}
+
+.sub-footer {
+  border-top: 1px solid #21262d;
+  padding-top: 2rem;
+  margin-top: 3rem;
 }

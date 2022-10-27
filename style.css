@@ -302,7 +302,7 @@ body {
     radial-gradient(at 80% 0, rgba(119, 119, 207, 0.08) 0, transparent 50%);
   background-color: #171b22;
   width: 100% !important;
-  height: 100% !important;
+  height: 150% !important;
 }
 
 .navbar {

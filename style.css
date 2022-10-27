@@ -90,7 +90,10 @@
   }
 
   .text-muted {
-    font-size: 13px;
+    font-size: 18px;
+  }
+  .text-small {
+    font-size: 12px;
   }
 
   .scroll-to {
@@ -195,6 +198,9 @@
   .text-muted {
     font-size: 12px;
   }
+  .text-small {
+    font-size: 12px;
+  }
 
   .scroll-to {
     padding: 45.5px 0;
@@ -262,12 +268,14 @@
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #dbc4ff;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
@@ -448,6 +456,61 @@ body {
   max-width: 1200px;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+/*------------------GRID SECTION--------------------*/
+
+.grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 80vw;
+  margin-inline: 10%;
+  grid-gap: 150px;
+}
+.subgrid {
+  width: 90%;
+  margin-inline: 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 50px;
+  place-items: center;
+  height: 500px;
+}
+.text-section {
+  width: 60%;
+  display: grid;
+  margin-right: 200px
+}
+.subgrid-title {
+  font-family: ClashDisplay;
+  font-weight: 600;
+  font-size: 40px;
+}
+.subgrid-text {
+  color: #B1B3B5;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.subgrid-list {
+  list-style: none;
+}
+.subgrid-list-item {
+  list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.icon-done {
+  color: #7f78d2;
+  margin-right: 10px;
+}
+.subgrid-image {
+  margin-right: 200px
+}
+.reverse-image {
+  margin-left: 100px
+}
+.reverse-text {
+  margin-left: 100px
 }
 
 /*--------------------------------------------------*/

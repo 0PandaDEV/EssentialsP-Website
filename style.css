@@ -523,7 +523,7 @@ body {
 }
 @media (max-width: 1000px) {
   .subgrid-title {
-    font-size: 28px;
+    font-size: 25px;
   }
   .subgrid-text {
     font-size: 13px;
@@ -532,16 +532,23 @@ body {
   .subgrid-list-item {
     font-size: 14px;
   }
+  .subgrid-list {
+    margin-bottom: 100px;
+    font-size: 14px;
+  }
+  .subgrid-image {
+    height: 40vw;
+  }
 }
 @media (max-width: 800px) {
   .grid {
-    width: 100vw;
+    width: 100%;
     grid-template-columns: 80vw;
     padding-inline: 10vw;
     grid-gap: 30px;
   }
   .subgrid {
-    width: 100vw;
+    width: 100%;
     margin-left: 0px;
     place-items: center;
     height: auto;
@@ -555,7 +562,7 @@ body {
     width: 100%;
   }
   .subgrid-title {
-    font-size: 40px;
+    font-size: 8vw;
   }
   .subgrid-text {
     margin: 0;
@@ -565,6 +572,8 @@ body {
   }
   .subgrid-image {
     margin: 0px;
+    margin-left: 30%;
+    height: 80vw;
   }
   .reverse-image {
     grid-row-start: 2;

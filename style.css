@@ -463,12 +463,12 @@ body {
   margin-top: 100px;
   display: grid;
   grid-template-columns: 80vw;
-  margin-inline: 10%;
+  padding-inline: 10vw;
   grid-gap: 150px;
 }
 .subgrid {
   width: 90%;
-  margin-inline: 5%;
+  margin-left: 10%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 50px;
@@ -476,11 +476,12 @@ body {
   height: 500px;
 }
 .text-section {
-  width: 60%;
+  width: 80%;
   display: grid;
   margin-right: 200px
 }
 .subgrid-title {
+  white-space: nowrap;
   font-family: ClashDisplay;
   font-weight: 600;
   font-size: 40px;
@@ -504,13 +505,75 @@ body {
   margin-right: 10px;
 }
 .subgrid-image {
-  margin-right: 200px
+  margin-right: 200px;
+  height: 90%;
 }
 .reverse-image {
   margin-left: 100px
 }
 .reverse-text {
   margin-left: 100px
+}
+@media (max-width: 1300px) {
+  .grid {
+    grid-template-columns: 99vw;
+    padding-inline: 0vw;
+    grid-gap: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .subgrid-title {
+    font-size: 28px;
+  }
+  .subgrid-text {
+    font-size: 13px;
+    max-width: 250px;
+  }
+  .subgrid-list-item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .grid {
+    width: 100vw;
+    grid-template-columns: 80vw;
+    padding-inline: 10vw;
+    grid-gap: 30px;
+  }
+  .subgrid {
+    width: 100vw;
+    margin-left: 0px;
+    place-items: center;
+    height: auto;
+    grid-template-columns: 80%;
+    grid-template-rows: 40% 50%;
+    grid-gap: 0px;
+    grid-auto-flow: revert;
+  }
+  .text-section {
+    margin: 0px;
+    width: 100%;
+  }
+  .subgrid-title {
+    font-size: 40px;
+  }
+  .subgrid-text {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .subgrid-image {
+    margin: 0px;
+  }
+  .reverse-image {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .reverse-text {
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
 }
 
 /*--------------------------------------------------*/

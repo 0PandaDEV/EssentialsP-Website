@@ -74,6 +74,7 @@
     font-size: 20px;
     line-height: 20px;
   }
+
   .menu {
     grid-column-gap: 7rem;
   }
@@ -97,6 +98,7 @@
   .text-muted {
     font-size: 18px;
   }
+
   .text-small {
     font-size: 12px;
   }
@@ -217,6 +219,7 @@
   .header {
     grid-template-columns: 40px auto 0px 0px 0px 50px 100px !important;
   }
+
   .hidenav {
     opacity: 0 !important;
     pointer-events: none;
@@ -227,7 +230,7 @@
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
-  scrollbar-color: #dbc4ff #0d1117;
+  scrollbar-color: #b180ff #0d1117;
   scrollbar-width: thin;
   box-sizing: border-box;
 }
@@ -238,11 +241,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dbc4ff;
+  background: #b180ff;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #dbc4ff;
+  background: #b180ff;
 }
 
 html {
@@ -428,9 +431,11 @@ body {
   .section-title {
     font-size: 2.125rem;
   }
+
   .section {
     padding: 5rem 0;
   }
+
   .section-list-item {
     font-size: 14px;
   }
@@ -441,24 +446,30 @@ body {
   .section-title {
     font-size: 28px;
   }
+
   .section {
     flex-direction: column;
     padding: 2rem 0;
   }
+
   .section-1,
   .section-3 {
     flex-direction: column-reverse;
   }
+
   .subgrid-list {
     margin: 0 !important;
   }
+
   .section-image {
     width: 100%;
     margin-bottom: 2rem;
   }
+
   .section-text {
     font-size: 13px;
   }
+
   .section-list-item {
     font-size: 11px;
   }
@@ -624,26 +635,32 @@ section {
     padding: 5rem 0;
     flex-direction: column;
   }
+
   .h1 {
     font-size: 29px;
     line-height: 41px;
     font-family: ClashDisplay;
     margin-bottom: 2rem;
   }
+
   .d-md-flex {
     display: flex;
     flex-direction: column;
   }
+
   .logo-wrapper {
     margin-bottom: 3rem;
   }
+
   .menu {
     grid-template-columns: 1px;
     grid-column-gap: 4rem;
   }
+
   .text-small {
     font-size: 12px;
   }
+
   .item {
     font-size: 11px;
     line-height: 17px;
@@ -659,6 +676,7 @@ section {
   max-width: 1200px;
   margin: auto;
 }
+
 .footer {
   border-top: 1px solid #21262d;
 }
@@ -675,11 +693,13 @@ section {
 .item {
   color: #b1b3b5 !important;
 }
+
 .menu {
   display: grid;
   grid-template-columns: auto auto auto auto;
   float: right;
 }
+
 .cta {
   width: 100%;
 }
@@ -700,6 +720,7 @@ section {
   opacity: 0;
   transition: all 1s ease;
 }
+
 .reveal-content.active {
   transform: translateY(0px);
   opacity: 1;

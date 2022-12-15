@@ -261,6 +261,8 @@ a {
 .scroll-to {
   float: left;
   text-align: left;
+  margin-left: 180px;
+  max-width: 1020px;
 }
 
 .sidenav {
@@ -303,7 +305,7 @@ li:hover:not(.selected) {
 }
 
 ul {
-  margin-top: 16px;
+  margin-top: 10px;
   margin-bottom: 2rem;
 }
 

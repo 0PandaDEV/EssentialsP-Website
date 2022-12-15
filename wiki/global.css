@@ -175,7 +175,7 @@ body {
 .home {
   background-color: #0d1117;
   width: 100% !important;
-  height: 100% !important;
+  height: 150% !important;
 }
 
 .getting_started {
@@ -252,29 +252,29 @@ a {
 }
 
 .content {
-  width: 100vw;
-  height: 100%;
-  padding-top: 150px;
-  display: grid;
-  grid-template-columns: 190px calc(100% - 190px);
-  grid-gap: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid red;
-  padding-inline: 10%;
+  max-width: 1200px;
+  padding: 150px 2rem;
+  margin-inline: auto;
+  flex-direction: row;
+  display: flex;
+  position: relative;
 }
 
 .scroll-to {
-  width: 100%;
-  border: 1px solid green;
+  float: left;
+  text-align: left;
+  margin-left: 180px;
+  max-width: 1020px;
+  width: 1020px;
+  padding-inline: 50px;
 }
 
 .sidenav {
-  border: 1px solid blue;
-  width: 190px;
+  position: fixed;
   float: left;
-  height: calc(100vh - 190px);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 150px);
   overflow-y: scroll;
   scrollbar-width: none;
 }

@@ -1,0 +1,20 @@
+.scroll-to .title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.scroll-to .pre-title {
+  color: #b180ff;
+  font-size: 16px;
+}
+
+.quote {
+  margin: 30px;
+  margin-inline: 0;
+}
+
+.before-button {
+  font-size: 20px;
+  padding-top: 30px;
+}

@@ -279,6 +279,7 @@ a {
   margin-left: 195px;
   margin-top: 9px;
   max-width: 940px;
+  min-width: 940px;
   padding-left: 50px;
 }
 
@@ -373,7 +374,7 @@ li.active > a {
   background-color: transparent;
   border-radius: 5px;
   border-color: #2f3033;
-  width: 470px;
+  width: 437px;
   height: 65px;
   padding: 16px;
   border-style: solid;
@@ -395,7 +396,7 @@ li.active > a {
   background-color: transparent;
   border-radius: 5px;
   border-color: #2f3033;
-  width: 470px;
+  width: 437px;
   height: 75px;
   padding: 16px;
   border-style: solid;
@@ -424,4 +425,37 @@ li.active > a {
 
 .bottom-button:hover {
   color: #b180ff !important;
+  transform: translateY(-3px);
+}
+
+.scroll-to .title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.scroll-to .pre-title {
+  color: #b180ff;
+  font-size: 16px;
+}
+
+.previous-button .direction,
+.previous-button .page {
+  float: right;
+  text-align: right;
+}
+
+.next-button {
+  margin-left: 16px;
+}
+
+.previous-button .icon {
+  float: none;
+  transform: rotate(180deg);
+  padding-bottom: 10px;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
 }

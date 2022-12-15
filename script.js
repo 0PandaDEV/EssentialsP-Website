@@ -11,5 +11,3 @@ function reveal() {
     }
   }
 }
-
-DarkReader.disable();

@@ -169,6 +169,7 @@ body {
   margin-inline: auto;
   box-sizing: border-box;
   z-index: 1000;
+  background-color: #0d1117;
 }
 
 .home {

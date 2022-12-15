@@ -263,6 +263,8 @@ a {
   text-align: left;
   margin-left: 180px;
   max-width: 1020px;
+  width: 1020px;
+  padding-inline: 50px;
 }
 
 .sidenav {
@@ -279,10 +281,41 @@ a {
   font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
+  background: none;
+  color: white;
+  outline: none;
+  border: none;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  padding: 4px;
+  padding-inline: 8px;
+  border-radius: 5px;
+  width: 180px;
+  margin-top: 5px;
+}
+
+.title:hover {
+  background-color: #2c3035;
+}
+
+.title::after {
+  font-family: "Material Icons";
+  content: "chevron_right";
+  float: right;
+  font-weight: 400;
+  rotate: 90deg;
+  transition: 0.2s;
+}
+
+.title.active_colab::after {
+  rotate: 0deg;
 }
 
 li {
   list-style: none;
+  user-select: none;
+  cursor: pointer;
   font-size: 14px;
   font-family: Inter;
   line-height: 32px;
@@ -300,16 +333,12 @@ li:hover:not(.selected) {
   border-color: #2c3035;
 }
 
-#first {
-  padding-top: 0;
-}
-
 ul {
   margin-top: 10px;
   margin-bottom: 2rem;
 }
 
-.selected {
+.active {
   background-color: #2b2733a2;
   border-radius: 5px;
   border-color: #2b2733a2;

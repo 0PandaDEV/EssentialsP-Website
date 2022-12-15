@@ -35,19 +35,18 @@
             </a>
           </div>
         </div>
-      </div>
     </header>
 
     <div class="content">
       <div class="sidenav">
-        <div class="introduction">
-          <h2 class="title">Introduction</h2>
+        <button type="button" class="title collapsible">Introduction</button>
+        <div class="introduction colab" style="display: block;">
           <ul class="border-before">
-            <li class="selected">Landing Page</li>
+            <li class="active">Landing Page</li>
           </ul>
         </div>
-        <div class="commands">
-          <h2 class="title">Commands</h2>
+        <button type="button" class="title collapsible">Commands</button>
+        <div class="commands colab" style="display: block;">
           <ul class="border-before">
             <li>Ranks</li>
             <li>Admin</li>
@@ -56,8 +55,8 @@
             <li>Homes</li>
           </ul>
         </div>
-        <div class="permissions">
-          <h2 class="title">Permissions</h2>
+        <button type="button" class="title collapsible">Permissions</button>
+        <div class="permissions colab" style="display: block;">
           <ul class="border-before">
             <li>Warps</li>
             <li>Homes</li>
@@ -69,11 +68,28 @@
       </div>
 
       <div class="scroll-to">
-        sdkfjgsdusnvsoeriuuhsdflgkjhsdfglkjshdfglkjhsdfgliuaehrgiousnvsdfgsjdsfglsdjghglskddfunvbsileurngskdjvnsleirunfglkjsldkfjhuirgoilsdfunvbsileurngskdjvnsleirunfglkjoeriuuhsdvboiunserglkjsv
-        oiun
+        aslkdhfgaskfldjhsdklggjfghsldkfgjjjgtgoiseunvnsoisdfgsdfgsdfgsdfgsdfgsdfgsdfgsdhsdasfahfhsdfasdfgsdfgsdfgsdfgdurfvoiseurnviousdlfgkhsdljkfhioser
       </div>
     </div>
   </main>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var colab = document.getElementsByClassName("colab");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active_colab")
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

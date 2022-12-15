@@ -294,11 +294,12 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 4px 40px #0c1016;
   display: grid;
   place-items: center;
-  grid-template-columns: 40px auto 40px 110px 48px 70px 120px;
+  white-space: nowrap;
+  grid-template-columns: 40px auto 70px 110px 48px 52px 120px;
 }
 
 .devider {

@@ -136,6 +136,18 @@
   background: #dbc4ff;
 }
 
+.sidenav::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.sidenav::-webkit-scrollbar-thumb:window-inactive {
+  background: transparent;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -175,7 +187,7 @@ body {
 .home {
   background-color: #0d1117;
   width: 100% !important;
-  height: 150% !important;
+  height: 100% !important;
 }
 
 .getting_started {
@@ -258,15 +270,16 @@ a {
   flex-direction: row;
   display: flex;
   position: relative;
+  padding-bottom: 0;
 }
 
 .scroll-to {
   float: left;
   text-align: left;
-  margin-left: 180px;
-  max-width: 1020px;
-  width: 1020px;
-  padding-inline: 50px;
+  margin-left: 195px;
+  margin-top: 9px;
+  max-width: 940px;
+  padding-left: 50px;
 }
 
 .sidenav {
@@ -279,7 +292,7 @@ a {
   scrollbar-width: none;
 }
 
-.title {
+.sidenav .title {
   font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
@@ -297,11 +310,11 @@ a {
   margin-top: 5px;
 }
 
-.title:hover {
+.sidenav .title:hover {
   background-color: #2c3035;
 }
 
-.title::after {
+.sidenav .title::after {
   font-family: "Material Icons";
   content: "chevron_right";
   float: right;
@@ -310,7 +323,7 @@ a {
   transition: 0.2s;
 }
 
-.title.active_colab::after {
+.sidenav .title.active_colab::after {
   rotate: 0deg;
 }
 
@@ -354,4 +367,61 @@ li.active {
 li.active > a {
   color: #b180ff;
   font-weight: 600;
+}
+
+.button-text {
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: #2f3033;
+  width: 470px;
+  height: 65px;
+  padding: 16px;
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.2s;
+  margin-top: 25px;
+  color: #bec5ce;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.button-text:hover {
+  transform: translateY(-3px);
+  color: #b180ff;
+}
+
+.bottom-button {
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: #2f3033;
+  width: 470px;
+  height: 75px;
+  padding: 16px;
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.2s;
+  margin-top: 25px;
+  float: right;
+}
+
+.direction {
+  font-size: 12px;
+  color: #9398a1;
+}
+
+.page {
+  font-size: 16px;
+  color: #bec5ce;
+}
+
+.bottom-button .icon {
+  float: right;
+  padding-top: 11px;
+  font-size: 23px;
+  color: #bec5ce;
+}
+
+.bottom-button:hover {
+  color: #b180ff !important;
 }

@@ -270,6 +270,7 @@ a {
   flex-direction: column;
   height: calc(100vh - 150px);
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .title {
@@ -285,7 +286,7 @@ li {
   line-height: 32px;
   color: #cbd5e1;
   position: relative;
-  margin-top: 10px;
+  margin-top: 6px;
   width: 180px;
   height: 32px;
   padding-left: 10px;

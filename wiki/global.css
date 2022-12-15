@@ -78,7 +78,7 @@
     height: 60px !important;
     font-size: 11px !important;
     line-height: 12px !important;
-    grid-template-columns: 40px auto 0px 0px 0px 50px 100px !important;
+    grid-template-columns: 40px auto 0px 0px 65px 100px !important;
   }
 
   .header-img {
@@ -116,6 +116,10 @@
   .material-icons-outlined {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .sidenav {
+    display: none !important;
   }
 }
 

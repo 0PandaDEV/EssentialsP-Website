@@ -22,3 +22,10 @@
 .bottom-nav {
   display: block !important;
 }
+
+.next-button {
+  float: left !important;
+  margin-left: 0 !important;
+  max-width: 890px;
+  width: 100% !important;
+}

@@ -283,7 +283,6 @@ a {
   text-align: left;
   margin-left: 195px;
   margin-top: 9px;
-  min-width: 75%;
   padding-left: 50px;
   width: 100%;
 }
@@ -414,7 +413,7 @@ li.active > a {
 
 .btn_link {
   min-width: 200px;
-  width: min(calc(50% - 8px), 437px);
+  width: min(calc(50% - 10px), 437px);
   margin-right: 16px;
 }
 
@@ -478,4 +477,19 @@ li.active > a {
 
 .bottom-nav > * {
   display: inline-block;
+}
+
+@media (max-width: 750px) {
+  .btn_link {
+    min-width: 200px;
+    width: min(calc(100% - 10px));
+    margin-right: 0px;
+  }
+  .bottom-nav {
+    white-space: wrap;
+  }
+  
+  .bottom-nav > * {
+    display: block;
+  }
 }

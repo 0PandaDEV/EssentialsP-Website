@@ -121,6 +121,11 @@
   .sidenav {
     display: none !important;
   }
+
+  .scroll-to {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -163,7 +168,7 @@ html {
 }
 
 body {
-  background: #161b22;
+  background: #0d1117;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   color: white;
@@ -278,8 +283,7 @@ a {
   text-align: left;
   margin-left: 195px;
   margin-top: 9px;
-  max-width: 940px;
-  min-width: 940px;
+  min-width: 75%;
   padding-left: 50px;
 }
 
@@ -343,7 +347,7 @@ li {
   padding-left: 10px;
 }
 
-li:hover:not(.selected) {
+li:hover:not(.active) {
   background-color: #2c3035;
   border-radius: 5px;
   border-color: #2c3035;
@@ -370,11 +374,11 @@ li.active > a {
   font-weight: 600;
 }
 
-.button-text {
+.button {
   background-color: transparent;
   border-radius: 5px;
   border-color: #2f3033;
-  width: 437px;
+  max-width: 890px;
   height: 65px;
   padding: 16px;
   border-style: solid;
@@ -387,23 +391,30 @@ li.active > a {
   line-height: 32px;
 }
 
-.button-text:hover {
+.button:hover {
   transform: translateY(-3px);
   color: #b180ff;
 }
 
 .bottom-button {
+  display: block;
   background-color: transparent;
   border-radius: 5px;
   border-color: #2f3033;
-  width: 437px;
+  width: 100%;
   height: 75px;
   padding: 16px;
   border-style: solid;
   border-width: 1px;
   transition: all 0.2s;
-  margin-top: 25px;
+  margin-top: 30px;
   float: right;
+}
+
+.btn_link {
+  min-width: 200px;
+  width: min(calc(50% - 8px), 437px);
+  margin-right: 16px;
 }
 
 .direction {
@@ -424,8 +435,12 @@ li.active > a {
 }
 
 .bottom-button:hover {
-  color: #b180ff !important;
   transform: translateY(-3px);
+}
+
+.bottom-button:hover .page,
+.bottom-button:hover .icon {
+  color: #b180ff !important;
 }
 
 .scroll-to .title {
@@ -445,17 +460,20 @@ li.active > a {
   text-align: right;
 }
 
-.next-button {
-  margin-left: 16px;
+.text-container {
+  display: grid;
 }
 
 .previous-button .icon {
-  float: none;
+  float: left;
   transform: rotate(180deg);
   padding-bottom: 10px;
 }
 
 .bottom-nav {
-  display: flex;
-  flex-direction: row;
+  white-space: nowrap;
+}
+
+.bottom-nav > * {
+  display: inline-block;
 }

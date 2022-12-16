@@ -285,6 +285,7 @@ a {
   margin-top: 9px;
   min-width: 75%;
   padding-left: 50px;
+  width: 100%;
 }
 
 .sidenav {
@@ -472,6 +473,7 @@ li.active > a {
 
 .bottom-nav {
   white-space: nowrap;
+  margin-bottom: 20px;
 }
 
 .bottom-nav > * {

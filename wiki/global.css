@@ -357,10 +357,6 @@ ul {
   margin-bottom: 1rem;
 }
 
-li > a {
-  color: #cbd5e1;
-}
-
 li.active {
   background-color: #2b2733a2;
   border-radius: 5px;
@@ -369,7 +365,10 @@ li.active {
   font-weight: 600;
 }
 
-li.active > a {
+a.active > li {
+  background-color: #2b2733a2;
+  border-radius: 5px;
+  border-color: #2b2733a2;
   color: #b180ff;
   font-weight: 600;
 }

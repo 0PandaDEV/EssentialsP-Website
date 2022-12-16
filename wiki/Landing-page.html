@@ -77,45 +77,24 @@
         <p class="quote">Welcome to the landing page of the wiki from EssentialsP!</p>
 
         <h2 class="before-button">Some things you might wanna know</h2>
-        <a href="" class="button">
-          <p class="button-text">Quick Start</p>
+        <a href="../wiki/Quick-start.html">
+          <p class="button">Quick Start</p>
         </a>
-        <a href="" class="button">
-          <p class="button-text">Getting Help</p>
+        <a href="">
+          <p class="button">Getting Help</p>
         </a>
 
-        <div class="bottom-nav">
-
-          <a href="../wiki/Quick-start.html">
-            <div class="next-button bottom-button">
-              <span class="material-icons-outlined icon">chevron_right</span>
-              <p class="direction">Next</p>
-              <h2 class="page">Quick Start</h2>
-            </div>
-          </a>
-
-        </div>
+        <a href="../wiki/Quick-start.html">
+          <div class="next-button bottom-button">
+            <span class="material-icons-outlined icon">chevron_right</span>
+            <p class="direction">Next</p>
+            <h2 class="page">Quick Start</h2>
+          </div>
+        </a>
       </div>
     </div>
   </main>
-
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var colab = document.getElementsByClassName("colab");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active_colab")
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-  </script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

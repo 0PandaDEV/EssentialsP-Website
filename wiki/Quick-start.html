@@ -77,15 +77,15 @@
 
         <div class="bottom-nav">
 
-          <a href="../wiki/Landing-page.html">
+          <a href="../wiki/Landing-page.html" class="btn_link">
             <div class="previous-button bottom-button">
               <span class="material-icons-outlined icon">chevron_right</span>
-              <p class="direction">Previous</p>
-              <h2 class="page">Landing Page</h2>
+              <div class="text-container">
+                <p class="direction">Previous</p>
+                <h2 class="page">Landing Page</h2>
+              </div>
             </div>
-          </a>
-
-          <a href="">
+          </a><a href="" class="btn_link">
             <div class="next-button bottom-button">
               <span class="material-icons-outlined icon">chevron_right</span>
               <p class="direction">Next</p>
@@ -97,24 +97,7 @@
       </div>
     </div>
   </main>
-
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var colab = document.getElementsByClassName("colab");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active_colab")
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-  </script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

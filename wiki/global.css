@@ -512,3 +512,16 @@ a.active > li {
     display: block;
   }
 }
+
+.highlighted-text {
+  color: #b180ff;
+}
+
+.highlighted-text:hover {
+  border-bottom: 1px;
+  border-style: solid;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-color: #b180ff;
+}

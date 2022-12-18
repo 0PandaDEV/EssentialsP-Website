@@ -126,6 +126,26 @@
     margin-left: 0 !important;
     padding-left: 0 !important;
   }
+
+  .scroll-to .pre-title {
+    font-size: 14px !important;
+  }
+
+  .scroll-to .title {
+    font-size: 38px !important;
+  }
+
+  .quote {
+    font-size: 14px;
+  }
+
+  .before-button {
+    font-size: 18px;
+  }
+
+  .content {
+    padding-top: 130px !important;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -487,7 +507,7 @@ a.active > li {
   .bottom-nav {
     white-space: wrap;
   }
-  
+
   .bottom-nav > * {
     display: block;
   }

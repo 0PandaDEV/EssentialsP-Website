@@ -515,13 +515,22 @@ a.active > li {
 
 .highlighted-text {
   color: #b180ff;
+  transition: 0.3s;
+  position: relative;
 }
 
-.highlighted-text:hover {
-  border-bottom: 1px;
-  border-style: solid;
-  border-left: none;
-  border-top: none;
-  border-right: none;
-  border-color: #b180ff;
+.highlighted-text:before {
+  content: "";
+  position: absolute; /* Position the pseudo-element absolutely */
+  bottom: 0; /* Anchor the pseudo-element to the bottom of the link */
+  left: 0;
+  right: 0;
+  height: 1px; /* Set the height of the underline */
+  background-color: #b180ff; /* Set the color of the underline */
+  transform: scaleX(0); /* Scale the width of the underline to 0 initially */
+  transition: transform 0.3s; /* Add a transition effect */
+}
+
+.highlighted-text:hover:before {
+  transform: scaleX(1); /* Scale the width of the underline to 1 on hover */
 }

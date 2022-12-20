@@ -466,6 +466,7 @@ a.active > li {
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .scroll-to .pre-title {
@@ -533,4 +534,12 @@ a.active > li {
 
 .highlighted-text:hover:before {
   transform: scaleX(1); /* Scale the width of the underline to 1 on hover */
+}
+
+.code {
+  background-color: #21262d;
+  border-radius: 5px;
+  padding: 3px;
+  padding-inline: 8px;
+  font-family: monospace;
 }

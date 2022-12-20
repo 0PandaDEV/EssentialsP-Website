@@ -542,4 +542,6 @@ a.active > li {
   padding: 3px;
   padding-inline: 8px;
   font-family: monospace;
+  width: min-content;
+  white-space: nowrap;
 }

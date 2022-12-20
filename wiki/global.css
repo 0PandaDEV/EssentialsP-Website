@@ -367,7 +367,7 @@ li {
   padding-left: 10px;
 }
 
-li:hover:not(.active) {
+a:not(.active) li:hover {
   background-color: #2c3035;
   border-radius: 5px;
   border-color: #2c3035;

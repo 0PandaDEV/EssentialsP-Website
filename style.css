@@ -55,6 +55,7 @@
 
   .lead {
     font-size: 18px;
+    font-weight: 400;
     line-height: 27px;
     margin-bottom: 40px;
   }
@@ -160,6 +161,7 @@
 
   .lead {
     font-size: 15px;
+    font-weight: 400;
     line-height: 22px;
     font-weight: 500;
     max-width: 400px;

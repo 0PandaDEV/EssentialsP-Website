@@ -1,11 +1,7 @@
 @font-face {
   font-family: ClashDisplay;
   src: url("./fonts/ClashDisplay.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: Cousine;
-  src: url("./fonts/Cousine.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -14,13 +10,9 @@
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url("./fonts/Roboto.woff2") format("woff2");
-}
-
-@font-face {
   font-family: Inter;
   src: url("./fonts/inder.woff2") format("woff2");
+  font-display: swap;
 }
 
 @media (min-width: 600px) {
@@ -262,7 +254,7 @@ body {
   color: white;
   line-height: 1.5;
   letter-spacing: 0.01rem;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
